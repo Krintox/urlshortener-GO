@@ -60,7 +60,7 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	// Connect to MongoDB
-	clientOptions := options.Client().ApplyURI("mongodb+srv://adminuser:urlshortener@cluster0.khivago.mongodb.net/")
+	clientOptions := options.Client().ApplyURI("")
 	client, err := mongo.Connect(context.Background(), clientOptions)
 	if err != nil {
 		log.Fatal(err)
